@@ -1,0 +1,26 @@
+{
+
+    "project" : [
+    {
+        "id":1,
+        "location":"Bhopal"
+    },
+    {
+        "id":2,
+        "location":"Indore"
+    },
+    {
+        "id":3,
+        "location":"Jhansi"
+    },
+    {
+        "id":4,
+        "location":"Kota"
+    },
+    {
+        "id":5,
+        "location":"Habibganj"
+    }
+]
+
+}
