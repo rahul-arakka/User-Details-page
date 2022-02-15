@@ -13,7 +13,15 @@ function getProjects() {
   xhr.onload = function () {
     let json = JSON.parse(this.responseText);
     let art = json.project;
-    console.log(art);
+    // console.log(art);
+
+    let main = document.querySelector("div#main");
+
+    let heading = document.createElement('h1');
+    let head = document.createTextNode("Project Details")
+    
+    heading.appendChild(head);
+    main.appendChild(heading);
     let html = `<thead>
                     <tr>
                     <th scope="col">S No.</th>
