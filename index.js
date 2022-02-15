@@ -1,7 +1,7 @@
 console.log("We are in Users Page");
 
 let projectDetails = document.getElementById("projectDetails");
-let personalDetails = document.getElementById("personalDetails");
+// let personalDetails = document.getElementById("personalDetails");
 
 projectDetails.addEventListener("click", getProjects);
 
@@ -15,13 +15,16 @@ function getProjects() {
     let art = json.project;
     // console.log(art);
 
-    let main = document.querySelector("div#main");
+    // let main = document.querySelector("div#main");
 
-    let heading = document.createElement('h1');
-    let head = document.createTextNode("Project Details")
+    // let heading = document.createElement('h1');
+    // let head = document.createTextNode("Project Details")
     
-    heading.appendChild(head);
-    main.appendChild(heading);
+    // heading.appendChild(head);
+    // main.appendChild(heading);
+    let heading = document.getElementById("heading");
+    heading.innerHTML = `<h1>Project Details</h1>`;
+
     let html = `<thead>
                     <tr>
                     <th scope="col">S No.</th>
@@ -36,8 +39,8 @@ function getProjects() {
                 <td>${element.location}</td>
               </tr>`;
     });
-    let table = document.getElementById("table");
-    table.innerHTML = html;
+    let books = document.getElementById("books");
+    books.innerHTML = html;
   };
   xhr.send();
 //   console.log("get request");
