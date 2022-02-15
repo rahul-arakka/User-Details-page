@@ -8,7 +8,7 @@ projectDetails.addEventListener("click", getProjects);
 function getProjects() {
   const xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "project.JSON", true);
+  xhr.open("GET", '/project.json', true);
 
   xhr.onload = function () {
     let json = JSON.parse(this.responseText);
