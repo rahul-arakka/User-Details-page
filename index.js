@@ -8,7 +8,7 @@ projectDetails.addEventListener("click", getProjects);
 function getProjects() {
   const xhr = new XMLHttpRequest();
 
-  xhr.open("GET", 'project.txt', true);
+  xhr.open("GET", 'project.json', true);
 
   xhr.onload = function () {
     let json = JSON.parse(this.responseText);
@@ -40,5 +40,5 @@ function getProjects() {
     table.innerHTML = html;
   };
   xhr.send();
-  console.log("get request");
+//   console.log("get request");
 }
